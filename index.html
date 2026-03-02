@@ -32,15 +32,26 @@
             border-radius: 10px;
         }
 
-        /* Top Section - HairFlow AI */
+        /* Header Section */
         .header-section .text {
             text-align: left;
         }
 
+        .header-section h1 {
+            font-size: 50px;
+            color: black;
+            margin-bottom: 25px;
+        }
+
+        .header-section p {
+            margin-bottom: 30px;
+        }
+
+        /* Bigger Schedule Appointment Button */
         .header-section .button {
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 20px;
+            margin-top: 10px;
+            padding: 20px 45px;  /* Bigger padding makes the button larger */
+            font-size: 22px;      /* Bigger text */
             background-color: black;
             color: white;
             border: none;
@@ -87,6 +98,17 @@
         .examples .example img {
             width:100%;
             border-radius:10px;
+        }
+
+        /* Responsive for Mobile */
+        @media (max-width: 900px) {
+            .flex-section {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .flex-section img {
+                width: 80%;
+            }
         }
 
     </style>
