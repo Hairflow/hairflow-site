@@ -3,16 +3,32 @@
 <head>
     <title>HairFlow AI</title>
     <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; background-color:#f9f9f9; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin:0; 
+            padding:0; 
+            background-color:#f9f9f9; 
+        }
         header { 
             background-image: url('https://via.placeholder.com/1200x400'); 
             background-size: cover; 
             color:black; 
             text-align:center; 
             padding:100px 20px; 
+            display:flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
         }
-        header h1 { font-size:50px; margin:0; }
-        header p { font-size:24px; margin:10px 0; }
+        header h1 { 
+            font-size:50px; 
+            margin:0; 
+        }
+        header p { 
+            font-size:24px; 
+            margin:20px 0 40px 0; 
+            max-width: 800px;
+        }
         header .button { 
             padding:15px 30px; 
             font-size:20px; 
@@ -23,34 +39,73 @@
             cursor:pointer; 
             text-decoration:none; 
         }
-        section { padding:50px 20px; max-width:1000px; margin:0 auto; }
-        h2 { font-size:32px; text-align:center; margin-bottom:30px; }
-        p { font-size:18px; line-height:1.6; }
-        .examples { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px; }
-        .example { width:300px; text-align:center; background:white; padding:20px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2);}
-        .example img { width:100%; border-radius:10px; }
+        section { 
+            padding:50px 20px; 
+            max-width:1000px; 
+            margin:0 auto; 
+        }
+        h2 { 
+            font-size:32px; 
+            text-align:center; 
+            margin-bottom:30px; 
+        }
+        p { 
+            font-size:18px; 
+            line-height:1.6; 
+        }
+        ul { 
+            font-size:18px; 
+            margin-top:20px; 
+            line-height:1.6; 
+        }
+        .examples { 
+            display:flex; 
+            flex-wrap:wrap; 
+            justify-content:center; 
+            gap:20px; 
+            margin-top:30px; 
+        }
+        .example { 
+            width:300px; 
+            text-align:center; 
+            background:white; 
+            padding:20px; 
+            border-radius:10px; 
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+        }
+        .example img { 
+            width:100%; 
+            border-radius:10px; 
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>HairFlow AI</h1>
-    <p>Automate salon follow-ups, reduce no-shows, and increase bookings</p>
-    <a href="demo.html" class="button">Book a Free Demo</a>
+    <p>
+        HairFlow AI is designed to help busy salons in Florida automate client communications and maximize appointments. 
+        Our platform sends automated appointment reminders, follow-up messages after visits, and personalized promotions 
+        to keep clients coming back. By reducing no-shows and enhancing customer engagement, HairFlow AI saves salon owners 
+        time and increases revenue. Focus on styling and growing your business while we handle the follow-ups.
+    </p>
+    <a href="demo.html" class="button">Schedule Appointment</a>
 </header>
 
 <section>
     <h2>What We Do</h2>
-    
-</section>
- <p>
-        HairFlow AI is designed to help busy salons in Florida automate client communications 
-        and maximize appointments. Our platform sends automated appointment reminders, follow-up 
-        messages after visits, and personalized promotions to keep clients coming back. 
-        By reducing no-shows and enhancing customer engagement, HairFlow AI saves salon owners 
-        time and increases revenue. With our simple, AI-powered system, you can focus on styling 
-        and growing your business while we handle the follow-ups.
+    <p>
+        HairFlow AI helps salons stay organized and engaged with their clients. Our services include:
     </p>
+    <ul>
+        <li>Automated appointment reminders via text or email</li>
+        <li>Follow-up messages to increase repeat bookings</li>
+        <li>Personalized promotions for loyal clients</li>
+        <li>Real-time notifications for missed calls or cancellations</li>
+        <li>Easy-to-use dashboard with AI insights and analytics</li>
+    </ul>
+</section>
+
 <section>
     <h2>Examples of Our Service</h2>
     <div class="examples">
