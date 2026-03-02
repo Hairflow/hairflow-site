@@ -10,49 +10,8 @@
             background-color:#f9f9f9; 
         }
 
-        /* Header with top-left image */
-        header {
-            display: flex;
-            align-items: center;
-            padding: 40px 50px;
-            gap: 40px;
-        }
-
-        header img {
-            width: 250px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .header-content {
-            max-width: 700px;
-        }
-
-        .header-content h1 {
-            font-size: 50px;
-            color: black;
-            margin-bottom: 20px;
-        }
-
-        .header-content p {
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 40px;
-        }
-
-        .header-content .button {
-            padding: 15px 30px;
-            font-size: 20px;
-            background-color: black;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        /* What We Do section with right-side image */
-        section.what-we-do {
+        /* General Flex Section */
+        .flex-section {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -61,20 +20,42 @@
             flex-wrap: wrap;
         }
 
-        section.what-we-do .text {
+        .flex-section .text {
             max-width: 600px;
-            text-align: center;
             font-size: 18px;
             line-height: 1.8;
         }
 
-        section.what-we-do img {
+        .flex-section img {
             width: 350px;
             height: auto;
             border-radius: 10px;
         }
 
-        /* Examples section */
+        /* Top Section - HairFlow AI */
+        .header-section .text {
+            text-align: left;
+        }
+
+        .header-section .button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* What We Do Section */
+        .what-we-do-section .text {
+            text-align: left;
+        }
+
+        /* Examples Section */
         section.examples {
             padding:50px 20px;
             max-width:1000px;
@@ -112,27 +93,27 @@
 </head>
 <body>
 
-<!-- Header with top-left image -->
-<header>
-    <img src="image on left.png" alt="Salon Top Left">
-    <div class="header-content">
+<!-- Top Section: HairFlow AI -->
+<section class="flex-section header-section">
+    <img src="image on left.png" alt="Header Left Image">
+    <div class="text">
         <h1>HairFlow AI</h1>
         <p>
             HairFlow AI is designed to help busy salons in Florida automate client communications and maximize appointments. Our platform sends automated appointment reminders, follow-up messages after visits, and personalized promotions to keep clients coming back. Focus on styling and growing your business while we handle the follow-ups.
         </p>
         <a href="demo.html" class="button">Schedule Appointment</a>
     </div>
-</header>
+</section>
 
-<!-- What We Do Section with image on the right -->
-<section class="what-we-do">
+<!-- Second Section: What We Do -->
+<section class="flex-section what-we-do-section">
     <div class="text">
         <h2>What We Do</h2>
         <p>
             HairFlow AI provides busy salons with a complete client communication solution. We send automated appointment reminders via text or email, follow up with messages to increase repeat bookings, offer personalized promotions for loyal clients, provide real-time notifications for missed calls or cancellations, and include an easy-to-use dashboard with AI insights and analytics. All of this is designed to save salon owners time, reduce no-shows, and increase revenue while keeping clients engaged.
         </p>
     </div>
-    <img src="right image.png" alt="Salon Example Right">
+    <img src="right image.png" alt="What We Do Image">
 </section>
 
 <!-- Examples Section -->
