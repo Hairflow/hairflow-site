@@ -10,11 +10,13 @@
   "logo": "https://hairflow.github.io/hairflow-site/logo #1.png"
 }
 </script>
+
     <title>HairFlow AI | Salon Appointment Automation for Florida Salons</title>
     
     <meta name="description" content="HairFlow AI helps Florida salons reduce no-shows and increase repeat bookings with automated reminders and follow-ups.">
     <meta name="keywords" content="salon automation, salon reminders, Florida salon software, reduce no-shows, salon marketing AI">
     <meta name="author" content="HairFlow AI">
+
     <style>
         body { 
             font-family: Arial, sans-serif; 
@@ -33,10 +35,13 @@
             flex-wrap: wrap;
         }
 
+        /* Text inside flex sections */
         .flex-section .text {
             max-width: 600px;
             font-size: 18px;
             line-height: 1.8;
+            display: flex;          /* stack items vertically */
+            flex-direction: column; /* ensures button is below text */
         }
 
         .flex-section img {
@@ -46,10 +51,6 @@
         }
 
         /* Header Section */
-        .header-section .text {
-            text-align: left;
-        }
-
         .header-section h1 {
             font-size: 50px;
             color: black;
@@ -57,7 +58,7 @@
         }
 
         .header-section p {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         /* Button */
@@ -73,6 +74,7 @@
             text-decoration: none;
             display: inline-block;
             text-align: center;
+            margin-top: 20px;
             transition: transform 0.2s, background-color 0.2s;
         }
 
@@ -115,11 +117,6 @@
             box-shadow:0 2px 5px rgba(0,0,0,0.2);
         }
 
-        .examples .example img {
-            width:100%;
-            border-radius:10px;
-        }
-
         /* Responsive for Mobile */
         @media (max-width: 900px) {
             .flex-section {
@@ -147,8 +144,7 @@
         <p>
             HairFlow AI is designed to help busy salons in Florida automate client communications and maximize appointments. Our platform sends automated appointment reminders, follow-up messages after visits, and even handles phone calls so customers can automatically book appointments over the phone. This allows you to focus on styling and growing your business while we handle the communication.
         </p>
-
-        <!-- Schedule Button -->
+        <!-- Button -->
         <a href="#contact" class="button">Automate Your Communication Now</a>
     </div>
 </section>
@@ -180,7 +176,7 @@
     </div>
 </section>
 
-<!-- Optional Contact Section (anchor for button) -->
+<!-- Contact Section -->
 <section id="contact" style="padding:50px 20px; text-align:center;">
     <h2>Contact Us</h2>
     <p>Fill out the form below to schedule your consultation.</p>
