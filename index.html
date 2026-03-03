@@ -6,11 +6,10 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Hair Flow AI",
-  "url": "https://hairflow.github.io/https://hairflow.github.io/hairflow-site//",
-  "logo": "https://hairflow.github.io/https://hairflow.github.io/hairflow-site//logo #1.png"
+  "url": "https://hairflow.github.io/hairflow-site/",
+  "logo": "https://hairflow.github.io/hairflow-site/logo #1.png"
 }
 </script>
-    <head>
     <title>HairFlow AI | Salon Appointment Automation for Florida Salons</title>
     
     <meta name="description" content="HairFlow AI helps Florida salons reduce no-shows and increase repeat bookings with automated reminders and follow-ups.">
@@ -61,7 +60,7 @@
             margin-bottom: 30px;
         }
 
-        /* ✅ Twice-As-Wide Button (Clean Version) */
+        /* Button */
         .header-section .button {
             width: 550px;              
             padding: 18px 0;
@@ -74,6 +73,12 @@
             text-decoration: none;
             display: inline-block;
             text-align: center;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .header-section .button:hover {
+            background-color: #333;
+            transform: scale(1.05);
         }
 
         /* What We Do Section */
@@ -141,6 +146,10 @@
         <h1>HairFlow AI</h1>
         <p>
             HairFlow AI is designed to help busy salons in Florida automate client communications and maximize appointments. Our platform sends automated appointment reminders, follow-up messages after visits, and even handles phone calls so customers can automatically book appointments over the phone. This allows you to focus on styling and growing your business while we handle the communication.
+        </p>
+
+        <!-- Schedule Button -->
+        <a href="#contact" class="button">Automate Your Communication Now</a>
     </div>
 </section>
 
@@ -160,15 +169,21 @@
     <h2>Examples of Our Service</h2>
     <div class="example-container">
         <div class="example">
-             <p>send customers automated text reminders before appointments</p>
+             <p>Send customers automated text reminders before appointments</p>
         </div>
         <div class="example">
             <p>Send customers follow-up messages after appointments</p>
         </div>
         <div class="example">
-            <p>automate your calls to save you time and energy</p>
+            <p>Automate your calls to save you time and energy</p>
         </div>
     </div>
+</section>
+
+<!-- Optional Contact Section (anchor for button) -->
+<section id="contact" style="padding:50px 20px; text-align:center;">
+    <h2>Contact Us</h2>
+    <p>Fill out the form below to schedule your consultation.</p>
 </section>
 
 </body>
