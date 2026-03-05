@@ -11,240 +11,202 @@
 }
 </script>
 
-<title>HairFlow AI | Salon Appointment Automation for Florida Salons</title>
+    <title>HairFlow AI | Salon Appointment Automation for Florida Salons</title>
+    
+    <meta name="description" content="HairFlow AI helps Florida salons reduce no-shows and increase repeat bookings with automated reminders and follow-ups.">
+    <meta name="keywords" content="salon automation, salon reminders, Florida salon software, reduce no-shows, salon marketing AI">
+    <meta name="author" content="HairFlow AI">
 
-<meta name="description" content="HairFlow AI helps Florida salons reduce no-shows and increase repeat bookings with automated reminders and follow-ups.">
-<meta name="keywords" content="salon automation, salon reminders, Florida salon software, reduce no-shows, salon marketing AI">
-<meta name="author" content="HairFlow AI">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin:0; 
+            padding:0; 
+            background-color:#f9f9f9; 
+        }
 
-<style>
+        /* General Flex Section */
+        .flex-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
 
-body { 
-font-family: Arial, sans-serif; 
-margin:0; 
-padding:0; 
-background-color:#f9f9f9; 
-}
+        /* Text inside flex sections */
+        .flex-section .text {
+            max-width: 600px;
+            font-size: 18px;
+            line-height: 1.8;
+            display: flex;          
+            flex-direction: column; /* stack items vertically */
+        }
 
-/* General Flex Section */
+        .flex-section img {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+        }
 
-.flex-section {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 40px;
-padding: 50px 20px;
-flex-wrap: wrap;
-}
+        /* Header Section */
+        .header-section h1 {
+            font-size: 50px;
+            color: black;
+            margin-bottom: 25px;
+        }
 
-/* Text inside flex sections */
+        .header-section p {
+            margin-bottom: 20px;
+        }
 
-.flex-section .text {
-max-width: 600px;
-font-size: 18px;
-line-height: 1.8;
-display: flex;
-flex-direction: column;
-}
+        /* Button */
+        .header-section .button {
+            width: 550px;              
+            padding: 18px 0;
+            font-size: 22px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            margin-top: 20px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
 
-.flex-section img {
-width: 350px;
-height: auto;
-border-radius: 10px;
-}
+        .header-section .button:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
 
-/* Header Section */
+        /* What We Do Section */
+        .what-we-do-section .text {
+            text-align: left;
+        }
 
-.header-section h1 {
-font-size: 50px;
-color: black;
-margin-bottom: 25px;
-}
+        /* Examples Section */
+        section.examples {
+            padding:50px 20px;
+            max-width:1000px;
+            margin:0 auto;
+        }
 
-.header-section p {
-margin-bottom: 20px;
-}
+        section.examples h2 {
+            font-size:32px;
+            text-align:center;
+            margin-bottom:30px;
+        }
 
-/* Button */
+        .examples .example-container {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+        }
 
-.header-section .button {
-width: 550px;
-padding: 18px 0;
-font-size: 22px;
-background-color: black;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-text-decoration: none;
-display: inline-block;
-text-align: center;
-margin-top: 20px;
-transition: transform 0.2s, background-color 0.2s;
-}
+        .examples .example {
+            width:300px;
+            text-align:center;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+        }
 
-.header-section .button:hover {
-background-color: #333;
-transform: scale(1.05);
-}
+        /* Contact Section */
+        .contact-section{
+            text-align:center;
+            padding:60px 20px;
+            background:white;
+            margin-top:40px;
+        }
 
-/* What We Do Section */
+        .contact-section h2{
+            font-size:32px;
+            margin-bottom:20px;
+        }
 
-.what-we-do-section .text {
-text-align: left;
-}
+        .contact-button{
+            padding:16px 40px;
+            background:black;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            font-size:20px;
+        }
 
-/* Examples Section */
+        /* Responsive for Mobile */
+        @media (max-width: 900px) {
+            .flex-section {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .flex-section img {
+                width: 80%;
+            }
 
-section.examples {
-padding:50px 20px;
-max-width:1000px;
-margin:0 auto;
-}
+            .header-section .button {
+                width: 90%;
+            }
+        }
 
-section.examples h2 {
-font-size:32px;
-text-align:center;
-margin-bottom:30px;
-}
-
-.examples .example-container {
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
-.examples .example {
-width:300px;
-text-align:center;
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 5px rgba(0,0,0,0.2);
-}
-
-/* Contact Section */
-
-.contact-section{
-text-align:center;
-padding:60px 20px;
-background:white;
-margin-top:40px;
-}
-
-.contact-section h2{
-font-size:32px;
-margin-bottom:20px;
-}
-
-.contact-button{
-padding:16px 40px;
-background:black;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-size:20px;
-}
-
-/* Responsive */
-
-@media (max-width: 900px) {
-
-.flex-section {
-flex-direction: column;
-gap: 30px;
-}
-
-.flex-section img {
-width: 80%;
-}
-
-.header-section .button {
-width: 90%;
-}
-
-}
-
-</style>
+    </style>
 </head>
-
 <body>
 
 <!-- Top Section: HairFlow AI -->
-
 <section class="flex-section header-section">
-
-<img src="image on left.png" alt="Header Left Image">
-
-<div class="text">
-
-<h1>HairFlow AI</h1>
-
-<p>
-HairFlow AI is designed to help busy salons in Florida automate client communications and maximize appointments. Our platform sends automated appointment reminders, follow-up messages after visits, and even handles phone calls so customers can automatically book appointments over the phone. This allows you to focus on styling and growing your business while we handle the communication.
-</p>
-
-<a href="plans.html" class="button">
-Automate Your Communication Now
-</a>
-
-</div>
-
+    <img src="image on left.png" alt="Header Left Image">
+    <div class="text">
+        <h1>HairFlow AI</h1>
+        <p>
+            HairFlow AI is designed to help busy salons in Florida automate client communications and maximize appointments. Our platform sends automated appointment reminders, follow-up messages after visits, and even handles phone calls so customers can automatically book appointments over the phone. This allows you to focus on styling and growing your business while we handle the communication.
+        </p>
+        <!-- Top button linking to Plans Page -->
+        <a href="plans.html" class="button">
+            Automate Your Communication Now
+        </a>
+    </div>
 </section>
 
 <!-- Second Section: What We Do -->
-
 <section class="flex-section what-we-do-section">
-
-<div class="text">
-
-<h2>What We Do</h2>
-
-<p>
-HairFlow AI provides busy salons with a complete client communication solution. We send automated appointment reminders via text or email, follow up with messages to increase repeat bookings, automate your business calls so clients can make appointments over the phone, and notify you whenever a client makes an appointment. All of this is designed to save salon owners time, reduce no-shows, and increase revenue while keeping clients engaged.
-</p>
-
-</div>
-
-<img src="right image.png" alt="What We Do Image">
-
+    <div class="text">
+        <h2>What We Do</h2>
+        <p>
+            HairFlow AI provides busy salons with a complete client communication solution. We send automated appointment reminders via text or email, follow up with messages to increase repeat bookings, automate your business calls so clients can make appointments over the phone, and notify you whenever a client makes an appointment. All of this is designed to save salon owners time, reduce no-shows, and increase revenue while keeping clients engaged.
+        </p>
+    </div>
+    <img src="right image.png" alt="What We Do Image">
 </section>
 
 <!-- Examples Section -->
-
 <section class="examples">
-
-<h2>Examples of Our Service</h2>
-
-<div class="example-container">
-
-<div class="example">
-<p>Send customers automated text reminders before appointments</p>
-</div>
-
-<div class="example">
-<p>Send customers follow-up messages after appointments</p>
-</div>
-
-<div class="example">
-<p>Automate your calls to save you time and energy</p>
-</div>
-
-</div>
-
+    <h2>Examples of Our Service</h2>
+    <div class="example-container">
+        <div class="example">
+             <p>Send customers automated text reminders before appointments</p>
+        </div>
+        <div class="example">
+            <p>Send customers follow-up messages after appointments</p>
+        </div>
+        <div class="example">
+            <p>Automate your calls to save you time and energy</p>
+        </div>
+    </div>
 </section>
 
 <!-- Contact Us Section -->
-
 <section class="contact-section">
-
-<h2>Contact Us</h2>
-
-<a href="plans.html" class="contact-button">
-Contact Us
-</a>
-
+    <h2>Contact Us</h2>
+    <!-- Bottom button linking to Demo Page -->
+    <a href="demo.html" class="contact-button">
+        Contact Us
+    </a>
 </section>
 
 </body>
