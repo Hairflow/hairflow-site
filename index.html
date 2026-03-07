@@ -208,6 +208,50 @@
         Contact Us
     </a>
 </section>
+    
+<div id="popup" style="
+position:fixed;
+bottom:20px;
+left:20px;
+background:white;
+padding:15px 20px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+font-family:Arial;
+display:none;
+">
 
+<span id="popupText"></span>
+
+</div>
+
+<script>
+
+const messages = [
+"Mike's Barbershop just started using HairFlow AI",
+"Fade Kings booked their first automated client",
+"Downtown Cuts activated AI texting",
+"Elite Barber Lounge signed up for automation",
+"Fresh Fades started their free trial"
+];
+
+function showPopup(){
+
+const popup = document.getElementById("popup");
+const text = document.getElementById("popupText");
+
+text.innerText = messages[Math.floor(Math.random()*messages.length)];
+
+popup.style.display = "block";
+
+setTimeout(()=>{
+popup.style.display = "none";
+},5000);
+
+}
+
+setInterval(showPopup,12000);
+
+</script>
 </body>
 </html>
